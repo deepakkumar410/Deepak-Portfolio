@@ -14,7 +14,7 @@ const Navbar = () => {
 
   useGSAP(()=>{
     const t1 = gsap.timeline()
-    t1.from(".name-logo p, .connect",{
+    t1.from(".name-logo p, .connect , .show-web li",{
       y: -100,
       opacity:0,
       stagger: 0.1,
