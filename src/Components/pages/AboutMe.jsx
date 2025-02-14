@@ -53,7 +53,7 @@ const AboutMe = () => {
         <h1 className="about-text">About Me</h1>
         <div className="all-details">
           <div className="img">
-            <img src="../public/photo.jpg" alt="" />
+            <img src="photo.jpg" alt="" />
           </div>
           <div className="skill-info">
             <p>
