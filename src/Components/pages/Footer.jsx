@@ -7,5 +7,5 @@ const Footer = () => {
     </footer>
   )
 }
- // deepak
+ // deepak kumar
 export default Footer
