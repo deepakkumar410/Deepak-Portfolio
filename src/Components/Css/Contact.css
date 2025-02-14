@@ -1,0 +1,89 @@
+.Contact-container {
+    justify-content: center;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    height: 80vh;
+    padding-top: 40px;
+}
+
+.container h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.container {
+
+    background-color: #191D20;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /* Adjust width as needed */
+
+}
+
+label {
+    display: block;
+    margin-top: 35px;
+}
+
+input {
+    color: white;
+    padding: 10px 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(101, 101, 101, 0.567);
+    outline: none;
+    width: 70rem;
+    font-size: 16px;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: white !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+
+.submit-btn button {
+    color: white;
+    margin-top: 25px;
+    background-color: #2aaaf8;
+    font-size: 17px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.submit-btn button:hover {
+    border-radius: 30px;
+    transform: scale(1.06);
+    box-shadow: -1px -1px 20px 4px #2aaaf8;
+}
+
+
+@media only screen and (max-width:500px) {
+    .Contact-container {
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        margin: auto;
+        height: 80vh;
+        padding-top: 40px;
+    }
+   
+    input {
+        width: 20rem;
+    }
+    label{
+        font-size: 15px;
+    }
+    .submit-btn button{
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+}

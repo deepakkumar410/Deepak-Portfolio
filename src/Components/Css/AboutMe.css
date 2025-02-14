@@ -1,0 +1,121 @@
+.about-me-container {
+    height: 100vh;
+    width: 100%;
+    padding-top: 70px;
+
+}
+
+.about-text {
+    padding-top: 40px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.all-details {
+    display: flex;
+    gap: 80px;
+    width: 70%;
+    height: 80vh;
+    margin: auto;
+    padding-top: 60px;
+}
+
+.img img {
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.skill-info {
+    padding-top: 20px;
+}
+
+.skill-info>p {
+    font-size: 18px;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+.name-details {
+    display: flex;
+    gap: 30px;
+    line-height: 35px;
+    font-size: 17px;
+    padding-bottom: 40px;
+}
+
+.name-form {
+    color: white;
+}
+
+.name-form2 {
+
+    color: rgb(182, 182, 182);
+}
+
+.resume-pdf {
+    cursor: pointer;
+    padding: 15px 30px;
+    background: #2aaaf8;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.resume-pdf:hover {
+    border-radius: 30px;
+    transform: scale(1.07);
+    box-shadow: -1px -1px 20px 4px #2aaaf8;
+}
+
+.skill-line {
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width:500px) {
+    .about-me-container {
+        height: 90vh;
+        width: 100%;
+
+    }
+
+    .all-details {
+        display: block;
+        gap: 80px;
+        width: 100%;
+        height: 70vh;
+        padding-top: 0px 0px;
+        margin: 0px 0px;
+
+    }
+
+    .about-text {
+        padding-top: 10px;
+    }
+
+    .img img {
+        display: none;
+        height: 100px;
+        width: 100px;
+    }
+    .skill-info {
+        padding: 0px 5px;
+    }
+    .skill-info>p{
+        font-size: 17px;
+
+    }
+    .resume-pdf {
+        padding: 10px 15px;
+    
+    }
+}
