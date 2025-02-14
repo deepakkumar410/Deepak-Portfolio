@@ -23,9 +23,9 @@ const Navbar = () => {
     })
  
   })
- 
+  const [showIcon , setShowIcon] = useState(false)
   const handleClick = ()=>{
-
+   setShowIcon(!showIcon)
   }
   
 
@@ -36,8 +36,7 @@ const Navbar = () => {
           <div className="name-logo">
             <p>ＤＥＥＰＡＫ</p>
           </div> 
-          <div className="menu-icon" onClick={handleClick}><RiMenu3Fill /></div>
-          <ul className="nav-list" >
+          <ul className= {showIcon ? "iconOfMenu  ":"show-web"} >
             <li><a href="#" onClick={() => scrollToSection("home")}>Home</a></li>
             <li><a href="#about" onClick={() => scrollToSection("about")}>About Me</a></li>
             <li><a href="#skillss" onClick={() => scrollToSection("skills")}>Skills</a></li>
@@ -49,6 +48,7 @@ const Navbar = () => {
           <a href="https://www.linkedin.com/in/deepak-kumar-799a22328/" target="_blank" className="connect-btn"> Connect With Me</a>
           </div>
         </div>
+        <div className="menu-icon" onClick={handleClick}><RiMenu3Fill /></div>
       </nav>
     </>
   );
