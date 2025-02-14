@@ -1,5 +1,5 @@
 import React from "react";
-import "../Css/projects.css";
+import "../Css/Projects.css";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
