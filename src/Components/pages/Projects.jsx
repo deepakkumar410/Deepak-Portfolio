@@ -1,5 +1,5 @@
 import React from "react";
-import "../Css/projects.css";
+import "../Css/Projects.css";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
@@ -53,7 +53,7 @@ const Projects = () => {
               loop
               muted
              
-              src="public/aniamtion-websites.mp4"
+              src="aniamtion-websites.mp4"
             >
        
 
@@ -72,7 +72,7 @@ const Projects = () => {
               loop
               muted
         
-              src="public/Netflix-clone website.mp4"
+              src="Netflix-clone website.mp4"
             ></video>
             <p className="sites-name">❖ Netflix Clone </p>
             <p className="sites-details">
@@ -89,7 +89,7 @@ const Projects = () => {
               loop
               muted
               
-              src="public/Instagram-clone.mp4"
+              src="Instagram-clone.mp4"
             ></video>
             <p className="sites-name">❖ Instagram Clone Page </p>
             <p className="sites-details">
@@ -105,7 +105,7 @@ const Projects = () => {
               loop
               muted
              
-              src="public/Tic-Toc-Toe game.mp4"
+              src="Tic-Toc-Toe game.mp4"
             ></video>
             <p className="sites-name"> ❖ Tic Toc Toe Game</p>
             <p className="sites-details">
