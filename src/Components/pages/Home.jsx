@@ -84,7 +84,11 @@ const Home = () => {
         </div>
         <div className="right-side">
           <div className="dpk-img">
+<<<<<<< HEAD
             <img src="photo.jpg" alt="" /> 
+=======
+            <img src="photo.jpg" alt="" />
+>>>>>>> e147a518e36cd751b4330a427122748966e81f4b
           </div>
         </div>
       </section>

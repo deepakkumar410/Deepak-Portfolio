@@ -7,5 +7,5 @@ const Footer = () => {
     </footer>
   )
 }
-
+ // deepak
 export default Footer
