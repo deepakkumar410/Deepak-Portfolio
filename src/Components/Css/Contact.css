@@ -75,15 +75,23 @@ input:-webkit-autofill {
         height: 80vh;
         padding-top: 40px;
     }
-   
+
     input {
         width: 20rem;
     }
-    label{
+
+    label {
         font-size: 15px;
     }
-    .submit-btn button{
-        padding: 10px 15px;
-        font-size: 15px;
+
+    .submit-btn button {
+        padding: 13px 25px;
+        font-size: 17px;
+    }
+
+    .submit-btn {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
     }
 }
