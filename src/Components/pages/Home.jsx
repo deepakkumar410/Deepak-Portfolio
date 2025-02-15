@@ -18,35 +18,27 @@ const Home = () => {
 
 
  useGSAP(()=>{
-  const t1 = gsap.timeline({
- 
-  })
+
   
-  t1.from(".my-info h1",{
+  gsap.from(".my-info",{
     x: -100,
     opacity:0,
+    stagger:0.5,
     duration: 1.5,
     delay:0.5 ,
-  },'e'),
-  t1.from(".my-name, .info-para",{
-    x:-100,
-    opacity:0,
-    duration: 1.5,
-    delay:0.5 ,
-  },'e'),
-  t1.from(".icon  ",{
+  }),
+  gsap.from(".icon",{
     scale: 0,
     opacity:0,
-    stagger:0.2,
     duration: 1.5,
     delay:0.5 ,
-  },'e')
-  t1.from(".dpk-img",{
+  })
+  gsap.from(".dpk-img",{
     x:100,
     opacity:0,
     duration: 1.5,
     delay:0.5 ,
-  },'e')
+  })
 
   })
   return (

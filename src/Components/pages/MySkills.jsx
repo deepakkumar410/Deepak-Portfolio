@@ -13,14 +13,14 @@ const MySkills = () => {
         trigger:'.skills-container' ,
         scroller: "body",
         // markers: true,
-        start: "top 60%",
+        start: "top 70%",
         end: "top 10%",
         scrub: 3,
       }
     });
 
     t3.from(".skills-container h1, .skills-para", {
-      y: -50,
+      y: 50,
       opacity: 0,
       duration: 1.5,
       delay: 0.5,

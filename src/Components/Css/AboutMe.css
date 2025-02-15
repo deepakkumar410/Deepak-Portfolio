@@ -1,5 +1,5 @@
 .about-me-container {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     padding-top: 70px;
 
@@ -87,6 +87,9 @@
         width: 100%;
 
     }
+    .about-me-container h1{
+        padding-top: 30px;
+    }
 
     .all-details {
         display: block;
@@ -107,14 +110,27 @@
         height: 100px;
         width: 100px;
     }
-    .skill-info {
+    .skill-info {   
         padding: 0px 5px;
     }
     .skill-info>p{
         font-size: 17px;
-
     }
-    .resume-pdf {
+    .name-details {
+        display: flex;
+        gap: 0px;
+        line-height: 35px;
+        font-size: 17px;
+        padding-bottom: 40px;
+    }
+.name-form{
+    width: 50%;
+}
+.download-btn{
+display: flex;
+justify-content: center;
+}
+    .resume-pdf { 
         padding: 10px 15px;
     
     }

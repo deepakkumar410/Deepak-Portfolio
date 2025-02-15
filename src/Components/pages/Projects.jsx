@@ -12,14 +12,15 @@ const Projects = () => {
         trigger:'.projects-container' ,
         scroller: "body",
         // markers: true,
-        start: "top 60%",
+        start: "top 70%",
         end: "top 10%",
         scrub: 3,
       }
     });
 
     t5.from("#projects", {
-      y: -50,
+      y: 50,
+      stagger:0.4,
       opacity: 0,
       duration: 1.5,
       delay: 0.5,

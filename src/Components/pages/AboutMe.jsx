@@ -31,22 +31,22 @@ const AboutMe = () => {
         duration: 1.5,
         delay: 0.5,
       }, 'a'),
-      t1.from(".download-btn", {
-       y:100,
-        scale: 0,
-        opacity: 0,
-        duration: 1.5,
-        delay: 0.5,
-      }, 'a'),
       t1.from(".skill-info p", {
         y: 100,
         opacity: 0,
         stagger: 0.1,
         duration: 1.5,
         delay: 0.5,
+      }, 'a'),
+      
+      t1.from(".download-btn", {
+       y:250,
+        scale: 0,
+        opacity: 0,
+        duration: 1.5,
+        delay: 0.5,
       }, 'a')
-
-  })
+    })
   return (
     <>
       <section id="about" className="about-me-container">
@@ -80,7 +80,7 @@ const AboutMe = () => {
               </div>
             </div>
             <div className="download-btn">
-               <a href="../public/Deepak_kumar_CV.pdf" target="_blank" download="Deepak_kumar_CV.pdf" className="resume-pdf">Download CV</a>
+               <a href="Deepak_kumar_CV.pdf" target="_blank" download="Deepak_kumar_CV.pdf" className="resume-pdf">Download CV</a>
             </div>
           </div>
         </div>
