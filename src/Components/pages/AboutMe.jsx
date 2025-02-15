@@ -66,7 +66,7 @@ const AboutMe = () => {
             <div className="name-details">
               <div className="name-form">
                 <p>Name:</p>
-                <p>Death of birth : </p>
+                <p>Date of birth : </p>
                 <p>Address : </p>
                 <p>Email : </p>
                 <p>Phone No : </p>
