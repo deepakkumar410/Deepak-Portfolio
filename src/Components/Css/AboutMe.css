@@ -34,7 +34,7 @@
 
 .skill-info>p {
     font-size: 18px;
-    line-height: 30px;
+    line-height: 35px;
     padding-bottom: 20px;
 }
 
@@ -87,7 +87,8 @@
         width: 100%;
 
     }
-    .about-me-container h1{
+
+    .about-me-container h1 {
         padding-top: 30px;
     }
 
@@ -110,12 +111,18 @@
         height: 100px;
         width: 100px;
     }
-    .skill-info {   
-        padding: 0px 5px;
+
+    .skill-info {
+        /* border: 2px solid red; */
+        max-width: 95%;
+        margin: auto;
+        padding: 0px 0px;
     }
-    .skill-info>p{
+
+    .skill-info>p {
         font-size: 17px;
     }
+
     .name-details {
         display: flex;
         gap: 0px;
@@ -123,15 +130,18 @@
         font-size: 17px;
         padding-bottom: 40px;
     }
-.name-form{
-    width: 50%;
-}
-.download-btn{
-display: flex;
-justify-content: center;
-}
-    .resume-pdf { 
+
+    .name-form {
+        width: 50%;
+    }
+
+    .download-btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .resume-pdf {
         padding: 10px 15px;
-    
+
     }
 }

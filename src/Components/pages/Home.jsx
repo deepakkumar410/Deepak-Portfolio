@@ -12,7 +12,7 @@ gsap.registerPlugin(useGSAP);
 const Home = () => {
 
  const [text] = useTypewriter({
-  words : ['Deepak Kumar', 'Frontend Developer'],
+  words : ['Deepak Kumar', 'Web Developer'],
   loop : {},
  })
 
@@ -53,10 +53,7 @@ const Home = () => {
             </h1>
             
             <p className="info-para">
-              I'm Frontend Web Developer and I've keen interest in frontend Web
-              development. I'm proficient in core web technology like HTML,
-              CSS, JAVASCRIPT. And have been actively learnig and exploring the
-              React Framework.
+            I'm  MERN stack developer with a good understanding of web development using MongoDB, Express.js, React.js, and Node.js. Skilled in creating user-friendly web applications and APIs.
             </p>
           </div>
           <div className="link-icon">

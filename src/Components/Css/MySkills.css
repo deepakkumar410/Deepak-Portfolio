@@ -1,7 +1,7 @@
 .skills-container {
   max-width: 80%;
   margin: auto;
-  height: 70vh;
+  height: 90vh;
   padding-top: 60px;
   margin-bottom: 20px;
 }
@@ -21,6 +21,7 @@
   flex-wrap: wrap;
 }
 .skill {
+  cursor: pointer;
   width: 45%;
   padding-bottom: 20px;
 }
@@ -70,7 +71,7 @@
 }
 .js-line {
   border-radius: 3px;
-  width: 80%;
+  width: 75%;
   background: #0078da;
 }
 .js-prsentg{
@@ -86,11 +87,39 @@
     position: relative;
     right: 50px;
 }
+.nodejs-line {
+  border-radius: 3px;
+  width: 80%;
+  background: #0078da;
+}
+.nodejs-prsentg{
+    position: relative;
+    right: 90px;
+}
+.expressjs-line {
+  border-radius: 3px;
+  width: 73%;
+  background: #0078da;
+}
+.expressjs-prsentg{
+    position: relative;
+    right: 150px;
+}
+.mongodb-line {
+  border-radius: 3px;
+  width: 85%;
+  background: #0078da;
+}
+.mongodb-prsentg{
+    position: relative;
+    right: 90px;
+}
+
 
 @media only screen and (max-width:1000px) {
   .skills-container {
     max-width: 100%;
-    height: 70vh;
+    height: 80vh;
     padding-top: 60px;
   }
   .skills-para{
@@ -120,6 +149,15 @@
       right: 25px;
   }
   .react-prsentg{
+      right: 20px;
+  }
+  .nodejs-prsentg{
+      right: 30px;
+  }
+  .expressjs-prsentg{
+      right: 40px;
+  }
+  .mongodb-prsentg{
       right: 20px;
   }
   

@@ -42,7 +42,7 @@ const MySkills = () => {
     <>
       <section id="skills" className="skills-container" >
         <h1>My Skills</h1>
-        <p className="skills-para">Motivated and detail-oriented Frontend Developer with a strong foundation in HTML, CSS, and JavaScript. Proficient in creating responsive and visually appealing web applications. </p>
+        <p className="skills-para">Proficient in building dynamic, responsive web applications and RESTful APIs. Strong problem-solving skills and a passion for learning new technologies.</p>
         <div className="skill-line">
           <div className="skill  left1">
             <div className="all-skill">
@@ -72,6 +72,7 @@ const MySkills = () => {
             </div>
             <div className="line"><span className="js-line"></span></div>
           </div>
+
           <div className="skill left1">
             <div className="all-skill">
               <p>REACT JS</p>
@@ -79,6 +80,28 @@ const MySkills = () => {
             </div>
             <div className="line"><span className="react-line"></span></div>
           </div>
+          <div className="skill left1">
+            <div className="all-skill">
+              <p>NODE JS</p>
+              <p className="nodejs-prsentg">75%</p>
+            </div>
+            <div className="line"><span className="nodejs-line"></span></div>
+          </div>
+          <div className="skill left1">
+            <div className="all-skill">
+              <p>EXPRESS JS </p>
+              <p className="expressjs-prsentg">65%</p>
+            </div>
+            <div className="line"><span className="expressjs-line"></span></div>
+          </div>
+          <div className="skill left1">
+            <div className="all-skill">
+              <p>MongoDB</p>
+              <p className="mongodb-prsentg">80%</p>
+            </div>
+            <div className="line"><span className="mongodb-line"></span></div>
+          </div>
+
         </div>
       </section>
     </>

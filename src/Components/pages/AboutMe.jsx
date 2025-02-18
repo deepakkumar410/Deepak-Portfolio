@@ -41,10 +41,9 @@ const AboutMe = () => {
       
       t1.from(".download-btn", {
        y:250,
-        scale: 0,
         opacity: 0,
         duration: 1.5,
-        delay: 0.5,
+        delay: 0.8,
       }, 'a')
     })
   return (
@@ -57,10 +56,7 @@ const AboutMe = () => {
           </div>
           <div className="skill-info">
             <p>
-              Dedicated Frontend Developer with a strong foundation in web
-              development fundamentals. Proficient in HTML, CSS, and JavaScript,
-              eager to apply my skills to build innovative and user-friendly web
-              applications.
+            My name is Deepak Kumar, and I am from Bihar. Currently, I reside in Faridabad. I'm in the final year of my Bachelor of Computer Applications (BCA) program at Amity University Online.
             </p>
 
             <div className="name-details">
