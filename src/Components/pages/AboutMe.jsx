@@ -76,7 +76,7 @@ const AboutMe = () => {
               </div>
             </div>
             <div className="download-btn">
-               <a href="Deepak_kumar_CV.pdf" target="_blank" download="Deepak_kumar_CV.pdf" className="resume-pdf">Download CV</a>
+               <a href="Deepak_Kumar_CV.pdf" target="_blank" download="Deepak_Kumar_CV.pdf" className="resume-pdf">Download CV</a>
             </div>
           </div>
         </div>
