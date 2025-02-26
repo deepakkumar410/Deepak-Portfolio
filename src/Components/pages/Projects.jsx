@@ -124,7 +124,7 @@ const Projects = () => {
                 loop
                 muted
 
-                src="public/Student  Registration Form.mp4"
+                src="Student  Registration Form.mp4"
               ></video>
               <p className="sites-name"> ❖ Student Registration Form</p>
               <p className="sites-details">
