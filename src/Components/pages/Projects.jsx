@@ -2,14 +2,14 @@ import React from "react";
 import "../Css/Projects.css";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import {ScrollTrigger} from 'gsap/ScrollTrigger';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger)
 
 const Projects = () => {
   useGSAP(() => {
     const t5 = gsap.timeline({
       scrollTrigger: {
-        trigger:'.projects-container' ,
+        trigger: '.projects-container',
         scroller: "body",
         // markers: true,
         start: "top 70%",
@@ -20,27 +20,27 @@ const Projects = () => {
 
     t5.from("#projects", {
       y: 50,
-      stagger:0.4,
+      stagger: 0.4,
       opacity: 0,
       duration: 1.5,
       delay: 0.5,
-    },'m')
-  t5.from(".left",{
-    y:150,
-    opacity:0,
-    stagger:0.3,
-    duration:1.5,
-    delay:0.5,
-  },'m')
-  t5.from(".right",{
-    y:150,
-    opacity:0,
-    stagger:0.3,
-    duration:1.5,
-    delay:0.5,
-  },'m')
+    }, 'm')
+    t5.from(".left", {
+      y: 150,
+      opacity: 0,
+      stagger: 0.3,
+      duration: 1.5,
+      delay: 0.5,
+    }, 'm')
+    t5.from(".right", {
+      y: 150,
+      opacity: 0,
+      stagger: 0.3,
+      duration: 1.5,
+      delay: 0.5,
+    }, 'm')
   })
-  
+
 
   return (
     <>
@@ -49,47 +49,47 @@ const Projects = () => {
         <div className="all-projects-box">
           <div className="box left" >
             <a href="https://dpkrestaurant.netlify.app/" target="_blank">
-            <video
-              autoPlay
-              loop
-              muted
-             
-              src="aniamtion-websites.mp4"
-            >
-       
+              <video
+                autoPlay
+                loop
+                muted
 
-            </video>
-            <p className="sites-name"> ❖ Food Delivery Website with Animation</p>
-            <p className="sites-details">
-              Build a Animation websites using Html, Css, And JavaScript. And
-              for the animation we use GSAP (GreenSock Animation Platform).
-            </p>
+                src="aniamtion-websites.mp4"
+              >
+
+
+              </video>
+              <p className="sites-name"> ❖ Food Delivery Website with Animation</p>
+              <p className="sites-details">
+                Build a Animation websites using Html, Css, And JavaScript. And
+                for the animation we use GSAP (GreenSock Animation Platform).
+              </p>
             </a>
           </div>
           <div className="box right">
             <a href="https://clone-deepakraii.netlify.app/" target="_blank">
-            <video
-              autoPlay
-              loop
-              muted
-        
-              src="Netflix-clone website.mp4"
-            ></video>
-            <p className="sites-name">❖ Netflix Clone </p>
-            <p className="sites-details">
-              Creating a Netflix clone involves more than just structuring HTML
-              and CSS. it's about replicating the user experience and aesthetic
-              of the platform
-            </p>
+              <video
+                autoPlay
+                loop
+                muted
+
+                src="Netflix-clone website.mp4"
+              ></video>
+              <p className="sites-name">❖ Netflix Clone </p>
+              <p className="sites-details">
+                Creating a Netflix clone involves more than just structuring HTML
+                and CSS. it's about replicating the user experience and aesthetic
+                of the platform
+              </p>
             </a>
           </div>
           <div className="box left">
-           
+
             <video
               autoPlay
               loop
               muted
-              
+
               src="Instagram-clone.mp4"
             ></video>
             <p className="sites-name">❖ Instagram Clone Page </p>
@@ -100,20 +100,36 @@ const Projects = () => {
             </p>
           </div>
           <div className="box right">
-          <a href="https://tic-toc-toe-by-dpk.netlify.app/" target="_blank"> 
-            <video
-              autoPlay
-              loop
-              muted
-             
-              src="Tic-Toc-Toe game.mp4"
-            ></video>
-            <p className="sites-name"> ❖ Tic Toc Toe Game</p>
-            <p className="sites-details">
-              Developed a simple Tic-Tac-Toe game using HTML, CSS, and
-              JavaScript, featuring a responsive user interface and basic game
-              logic.
-            </p>
+            <a href="https://tic-toc-toe-by-dpk.netlify.app/" target="_blank">
+              <video
+                autoPlay
+                loop
+                muted
+
+                src="Tic-Toc-Toe game.mp4"
+              ></video>
+              <p className="sites-name"> ❖ Tic Toc Toe Game</p>
+              <p className="sites-details">
+                Developed a simple Tic-Tac-Toe game using HTML, CSS, and
+                JavaScript, featuring a responsive user interface and basic game
+                logic.
+              </p>
+            </a>
+
+          </div>
+          <div className="box right">
+            <a href="https://delicate-pavlova-cc8858.netlify.app/" target="_blank">
+              <video
+                autoPlay
+                loop
+                muted
+
+                src="public/Student  Registration Form.mp4"
+              ></video>
+              <p className="sites-name"> ❖ Student Registration Form</p>
+              <p className="sites-details">
+                Create a student registration form using React.js, Node.js, Express.js, and MongoDB.   When a user submits the data, it will be stored in the database. Additionally, include a delete button that removes the data from the database.
+              </p>
             </a>
           </div>
         </div>
