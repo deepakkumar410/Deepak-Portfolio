@@ -100,38 +100,22 @@ const Projects = () => {
             </p>
           </div>
           <div className="box right">
-            <a href="https://tic-toc-toe-by-dpk.netlify.app/" target="_blank">
+            <a href="https://animate-x-animation.vercel.app/" target="_blank">
               <video
                 autoPlay
                 loop
                 muted
 
-                src="Tic-Toc-Toe game.mp4"
+                src="Animation webbb - Made with Clipchamp.mp4"
               ></video>
-              <p className="sites-name"> ❖ Tic Toc Toe Game</p>
+              <p className="sites-name"> ❖ Animate-X (GSAP Animation Website)</p>
               <p className="sites-details">
-                Developed a simple Tic-Tac-Toe game using HTML, CSS, and
-                JavaScript, featuring a responsive user interface and basic game
-                logic.
+                A fully responsive animation website built using React and GSAP, featuring smooth motion effects, scroll-based animations, and modern transitions. Focused on delivering a visually rich experience with optimized performance and Vercel deployment.
               </p>
             </a>
 
           </div>
-          <div className="box right">
-            <a href="https://delicate-pavlova-cc8858.netlify.app/" target="_blank">
-              <video
-                autoPlay
-                loop
-                muted
-
-                src="Student  Registration Form.mp4"
-              ></video>
-              <p className="sites-name"> ❖ Student Registration Form</p>
-              <p className="sites-details">
-                Create a student registration form using React.js, Node.js, Express.js, and MongoDB.   When a user submits the data, it will be stored in the database. Additionally, include a delete button that removes the data from the database.
-              </p>
-            </a>
-          </div>
+         
         </div>
       </section>
     </>
