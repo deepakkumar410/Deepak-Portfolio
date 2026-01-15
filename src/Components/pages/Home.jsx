@@ -33,7 +33,6 @@ const Home = () => {
 
     tl.from(".my-info h1", {
       y: 40,
-      opacity: 0,
       duration: 1.2,
       ease: "power4.out"
     })
