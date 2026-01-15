@@ -1,41 +1,16 @@
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
-import { GrInstagram } from 'react-icons/gr'
-import { BiLogoFacebook } from 'react-icons/bi'
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { GrInstagram } from 'react-icons/gr';
+import { BiLogoFacebook } from 'react-icons/bi';
+import '../Css/footer.css'; 
 
 const Footer = () => {
   return (
-    <footer style={{
-      textAlign: "center", 
-      marginBottom: "30px", 
-      padding: "40px 20px",
-      borderTop: "1px solid rgba(75, 85, 99, 0.2)",
-      marginTop: "80px",
-      position: "relative",
-      zIndex: 1
-    }}>
-      <div style={{
-        display: "flex",
-        justifyContent: "center",
-        gap: "20px",
-        marginBottom: "20px"
-      }}>
+    <footer className="footer">
+      <div className="footer-socials">
         <a 
           href="https://www.facebook.com/share/1F7YqfrqAP/" 
           target="_blank" 
           rel="noopener noreferrer"
-          style={{
-            color: "#9ca3af",
-            fontSize: "20px",
-            transition: "all 0.3s"
-          }}
-          onMouseEnter={(e) => {
-            e.target.style.transform = "translateY(-5px) scale(1.2)";
-            e.target.style.color = "#d1d5db";
-          }}
-          onMouseLeave={(e) => {
-            e.target.style.transform = "translateY(0) scale(1)";
-            e.target.style.color = "#2aaaf8";
-          }}
         >
           <BiLogoFacebook />
         </a>
@@ -43,19 +18,6 @@ const Footer = () => {
           href="https://www.instagram.com/deepak_rai_04_/?__pwa=1" 
           target="_blank" 
           rel="noopener noreferrer"
-          style={{
-            color: "#9ca3af",
-            fontSize: "20px",
-            transition: "all 0.3s"
-          }}
-          onMouseEnter={(e) => {
-            e.target.style.transform = "translateY(-5px) scale(1.2)";
-            e.target.style.color = "#d1d5db";
-          }}
-          onMouseLeave={(e) => {
-            e.target.style.transform = "translateY(0) scale(1)";
-            e.target.style.color = "#2aaaf8";
-          }}
         >
           <GrInstagram />
         </a>
@@ -63,19 +25,6 @@ const Footer = () => {
           href="https://www.linkedin.com/in/deepak-kumar-799a22328/" 
           target="_blank" 
           rel="noopener noreferrer"
-          style={{
-            color: "#9ca3af",
-            fontSize: "20px",
-            transition: "all 0.3s"
-          }}
-          onMouseEnter={(e) => {
-            e.target.style.transform = "translateY(-5px) scale(1.2)";
-            e.target.style.color = "#d1d5db";
-          }}
-          onMouseLeave={(e) => {
-            e.target.style.transform = "translateY(0) scale(1)";
-            e.target.style.color = "#2aaaf8";
-          }}
         >
           <FaLinkedinIn />
         </a>
@@ -83,38 +32,19 @@ const Footer = () => {
           href="https://github.com/deepakkumar410" 
           target="_blank" 
           rel="noopener noreferrer"
-          style={{
-            color: "#9ca3af",
-            fontSize: "20px",
-            transition: "all 0.3s"
-          }}
-          onMouseEnter={(e) => {
-            e.target.style.transform = "translateY(-5px) scale(1.2)";
-            e.target.style.color = "#d1d5db";
-          }}
-          onMouseLeave={(e) => {
-            e.target.style.transform = "translateY(0) scale(1)";
-            e.target.style.color = "#2aaaf8";
-          }}
         >
           <FaGithub />
         </a>
       </div>
-      <p style={{
-        color: "rgba(255, 255, 255, 0.6)",
-        fontSize: "14px"
-      }}>
+
+      <p className="footer-text">
         &copy; {new Date().getFullYear()} Deepak Kumar | All rights reserved
       </p>
-      <p style={{
-        color: "rgba(255, 255, 255, 0.4)",
-        fontSize: "12px",
-        marginTop: "10px"
-      }}>
+      <p className="footer-subtext">
         Built with React & GSAP
       </p>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

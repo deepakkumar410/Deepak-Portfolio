@@ -99,15 +99,17 @@ const Projects = () => {
     }, 'm')
   }, [])
 
-  const openModal = (project) => {
-    setSelectedProject(project);
-    document.body.style.overflow = 'hidden';
-  };
+const openModal = (project) => {
+  setSelectedProject(project);
+  document.body.style.overflow = 'hidden';  // <-- scroll disable
+};
 
-  const closeModal = () => {
-    setSelectedProject(null);
-    document.body.style.overflow = 'auto';
-  };
+const closeModal = () => {
+  setSelectedProject(null);
+  document.body.style.overflow = 'auto';    // <-- scroll enable
+};
+
+
 
   return (
     <>
