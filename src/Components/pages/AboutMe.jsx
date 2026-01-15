@@ -19,11 +19,12 @@ const AboutMe = () => {
       }
     });
 
-    t1.from(".about-text", {
-      y: 100,
+    t1.from(".about-text, .about-subtitle", {
+      y: 50,
       opacity: 0,
       duration: 1.5,
       delay: 0.5,
+      stagger: 0.2,
     }, 'a'),
       t1.from(".img img", {
         y:100,
@@ -49,7 +50,10 @@ const AboutMe = () => {
   return (
     <>
       <section id="about" className="about-me-container">
-        <h1 className="about-text">About Me</h1>
+        <div className="about-header">
+          <h1 className="about-text">About Me</h1>
+          <p className="about-subtitle">Get to know more about me</p>
+        </div>
         <div className="all-details">
           <div className="img">
             <img src="/photo.jpg" alt="Deepak Kumar" />
@@ -76,7 +80,7 @@ const AboutMe = () => {
               </div>
             </div>
             <div className="download-btn">
-               <a href="Deepak_Kumar_CV.pdf" target="_blank" download="Deepak_Kumar_CV.pdf" className="resume-pdf">Download CV</a>
+               <a href="/Deepak_Kumar_CV.pdf" target="_blank" download="Deepak_Kumar_CV.pdf" className="resume-pdf">Download CV</a>
             </div>
           </div>
         </div>

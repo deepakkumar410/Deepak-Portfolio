@@ -1,4 +1,3 @@
-import React from "react";
 import "../Css/Experience.css";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -41,21 +40,7 @@ const Experience = () => {
     }
   ];
 
-  const personalProjects = [
-    {
-      id: 1,
-      name: "AI Chat Interface",
-      technologies: ["React", "Gemini API", "Vercel"],
-      description: "A responsive AI-powered chat interface developed with React and Gemini API. Designed with real-time message interaction, clean UI flow, and seamless deployment on Vercel for fast performance and accessibility."
-    },
-    {
-      id: 2,
-      name: "Animate-X (GSAP Animation Website)",
-      technologies: ["React", "GSAP", "Vercel"],
-      description: "A fully responsive animation website built using React and GSAP. Features smooth motion effects, scroll-based animations, and modern transitions. Focused on delivering a visually rich experience with optimized performance and Vercel deployment."
-    }
-  ];
-
+  
   useGSAP(() => {
     // Ensure content is visible by default
     gsap.set([".experience-card", ".project-card"], {
@@ -156,8 +141,7 @@ const Experience = () => {
             </div>
           ))}
         </div>
-
-        <div className="personal-projects-section">
+        {/* <div className="personal-projects-section">
           <h2 className="section-title">Personal Projects</h2>
           <div className="personal-projects-grid">
             {personalProjects.map((project) => (
@@ -175,7 +159,7 @@ const Experience = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   );

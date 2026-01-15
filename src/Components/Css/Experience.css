@@ -5,6 +5,7 @@
     padding-top: 100px;
     padding-bottom: 100px;
     position: relative;
+    z-index: 1;
     min-height: 500px;
     overflow: visible;
 }
@@ -18,15 +19,14 @@
     font-size: 55px;
     font-weight: 800;
     margin-bottom: 15px;
-    background: linear-gradient(135deg, #ffffff 0%, #2aaaf8 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #ffffff;
+    /* -webkit-text-fill-color: transparent; */
     background-clip: text;
 }
 
 .experience-container h1 .highlight {
-    color: #2aaaf8;
-    -webkit-text-fill-color: #2aaaf8;
+    color: #9ca3af;
+    color: #d1d5db;
 }
 
 .experience-subtitle {
@@ -49,9 +49,9 @@
 }
 
 .experience-card {
-    background: rgba(25, 29, 32, 0.6);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(42, 170, 248, 0.1);
+    background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.08), rgba(15, 23, 42, 0.96));
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(148, 163, 184, 0.35);
     border-radius: 20px;
     padding: 40px;
     margin-bottom: 40px;
@@ -63,9 +63,9 @@
 }
 
 .experience-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 60px rgba(42, 170, 248, 0.2);
-    border-color: rgba(42, 170, 248, 0.3);
+    transform: translateY(-6px);
+    box-shadow: 0 24px 70px rgba(15, 23, 42, 0.9);
+    border-color: rgba(56, 189, 248, 0.7);
 }
 
 .experience-header-card {
@@ -86,14 +86,14 @@
 .company-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, rgba(42, 170, 248, 0.2), rgba(42, 170, 248, 0.1));
-    border: 2px solid rgba(42, 170, 248, 0.3);
+    background: linear-gradient(135deg, rgba(75, 85, 99, 0.2), rgba(75, 85, 99, 0.1));
+    border: 2px solid rgba(75, 85, 99, 0.3);
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 24px;
-    color: #2aaaf8;
+    color: #9ca3af;
 }
 
 .company-name {
@@ -106,7 +106,7 @@
 .position-name {
     font-size: 20px;
     font-weight: 600;
-    color: #2aaaf8;
+    color: #9ca3af;
     margin: 0;
 }
 
@@ -126,7 +126,7 @@
 }
 
 .meta-icon {
-    color: #2aaaf8;
+    color: #9ca3af;
     font-size: 14px;
 }
 
@@ -136,9 +136,9 @@
     color: rgba(255, 255, 255, 0.85);
     margin-bottom: 30px;
     padding: 20px;
-    background: rgba(42, 170, 248, 0.05);
+    background: rgba(75, 85, 99, 0.05);
     border-radius: 10px;
-    border-left: 3px solid #2aaaf8;
+    border-left: 3px solid #6b7280;
 }
 
 .projects-list {
@@ -148,17 +148,17 @@
 }
 
 .project-item {
-    background: rgba(42, 170, 248, 0.05);
-    border: 1px solid rgba(42, 170, 248, 0.1);
+    background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.06), rgba(15, 23, 42, 0.9));
+    border: 1px solid rgba(148, 163, 184, 0.3);
     border-radius: 15px;
     padding: 25px;
     transition: all 0.3s;
 }
 
 .project-item:hover {
-    background: rgba(42, 170, 248, 0.08);
-    border-color: rgba(42, 170, 248, 0.2);
-    transform: translateX(5px);
+    background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.12), rgba(15, 23, 42, 0.98));
+    border-color: rgba(56, 189, 248, 0.6);
+    transform: translateX(6px);
 }
 
 .project-header {
@@ -169,7 +169,7 @@
 }
 
 .project-icon {
-    color: #2aaaf8;
+    color: #9ca3af;
     font-size: 20px;
 }
 
@@ -189,12 +189,12 @@
 
 .tech-badge {
     padding: 6px 15px;
-    background: rgba(42, 170, 248, 0.15);
-    color: #2aaaf8;
+    background: rgba(75, 85, 99, 0.15);
+    color: #9ca3af;
     border-radius: 20px;
     font-size: 13px;
     font-weight: 600;
-    border: 1px solid rgba(42, 170, 248, 0.3);
+    border: 1px solid rgba(75, 85, 99, 0.4);
 }
 
 .project-points {
@@ -215,7 +215,7 @@
     content: "▸";
     position: absolute;
     left: 0;
-    color: #2aaaf8;
+    color: #9ca3af;
     font-weight: bold;
 }
 
@@ -229,8 +229,7 @@
     color: white;
     text-align: center;
     margin-bottom: 50px;
-    background: linear-gradient(135deg, #ffffff 0%, #2aaaf8 100%);
-    -webkit-background-clip: text;
+    color: #ffffff;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
@@ -242,9 +241,9 @@
 }
 
 .project-card {
-    background: rgba(25, 29, 32, 0.6);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(42, 170, 248, 0.1);
+    background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.08), rgba(15, 23, 42, 0.96));
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(148, 163, 184, 0.35);
     border-radius: 20px;
     padding: 30px;
     transition: all 0.4s;
@@ -256,8 +255,8 @@
 
 .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 60px rgba(42, 170, 248, 0.3);
-    border-color: rgba(42, 170, 248, 0.3);
+    box-shadow: 0 24px 70px rgba(15, 23, 42, 0.9);
+    border-color: rgba(56, 189, 248, 0.7);
 }
 
 .project-card-header {
@@ -268,7 +267,7 @@
 }
 
 .project-card-icon {
-    color: #2aaaf8;
+    color: #9ca3af;
     font-size: 24px;
 }
 
@@ -294,12 +293,36 @@
 
 .project-tech-tag {
     padding: 6px 14px;
-    background: rgba(42, 170, 248, 0.15);
-    color: #2aaaf8;
+    background: rgba(75, 85, 99, 0.15);
+    color: #9ca3af;
     border-radius: 15px;
     font-size: 13px;
     font-weight: 600;
-    border: 1px solid rgba(42, 170, 248, 0.2);
+    border: 1px solid rgba(75, 85, 99, 0.2);
+}
+
+@media only screen and (max-width: 768px) {
+    .experience-container {
+        padding-top: 80px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .experience-container h1 {
+        font-size: 32px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .personal-projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-card {
+        padding: 20px;
+    }
 }
 
 @media only screen and (max-width: 1000px) {

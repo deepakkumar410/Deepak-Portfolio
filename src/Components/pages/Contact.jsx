@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Swal from 'sweetalert2';
 import "../Css/Contact.css"
 import { useGSAP } from '@gsap/react';
@@ -85,7 +85,16 @@ const Contact = () => {
                     <label >E-MAIL</label>
                     <input type="email" id="email" name="email" value={name.email} placeholder='Enter your email' required onChange={handleFillName} />
                     <label>Message</label>
-                    <input type="text" id="message" name="Message" value={name.message} placeholder='Enter  your message' required onChange={handleFillName} />
+                    <textarea 
+                        id="message" 
+                        name="Message" 
+                        value={name.message} 
+                        placeholder='Enter your message' 
+                        required 
+                        onChange={handleFillName}
+                        rows="5"
+                        className="message-textarea"
+                    />
                     <div className='submit-btn'><button type="submit">Send Now</button></div>
                 </form>
             </div>

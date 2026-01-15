@@ -1,4 +1,3 @@
-import React, { useRef } from "react";
 import "../Css/MySkills.css";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -6,38 +5,46 @@ import {ScrollTrigger} from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 const MySkills = () => {
-  const scroller = useRef();
   useGSAP(() => {
+    // Ensure skills are visible by default
+    gsap.set([".left1", ".right1"], {
+      opacity: 1,
+      y: 0,
+      visibility: "visible"
+    });
+
     const t3 = gsap.timeline({
       scrollTrigger: {
         trigger:'.skills-container' ,
         scroller: "body",
-        // markers: true,
-        start: "top 70%",
-        end: "top 10%",
-        scrub: 3,
+        start: "top 80%",
+        end: "top 30%",
+        scrub: false,
+        toggleActions: "play none none none",
       }
     });
 
     t3.from(".skills-container h1, .skills-para", {
-      y: 50,
-      opacity: 0,
-      duration: 1.5,
-      delay: 0.5,
+      y: 30,
+      opacity: 0.8,
+      duration: 0.8,
+      ease: "power2.out",
     },'m')
-  t3.from(".left1",{
-    y:150,
-    opacity:0,
-    duration:1.5,
-    delay:0.5,
-  },'m')
-  t3.from(".right1",{
-    y:150,
-    opacity:0,
-    duration:1.5,
-    delay:0.5,
-  },'m')
-  })
+    t3.from(".left1",{
+      y:50,
+      opacity:0.8,
+      stagger: 0.1,
+      duration:0.6,
+      ease: "power2.out",
+    },'m')
+    t3.from(".right1",{
+      y:50,
+      opacity:0.8,
+      stagger: 0.1,
+      duration:0.6,
+      ease: "power2.out",
+    },'m')
+  }, [])
   return (
     <>
       <section id="skills" className="skills-container" >
