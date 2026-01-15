@@ -1,78 +1,160 @@
 .about-me-container {
-    height: 90vh;
+    min-height: 90vh;
     width: 100%;
-    padding-top: 70px;
-
+    padding-top: 100px;
+    padding-bottom: 80px;
+    position: relative;
 }
 
 .about-text {
     padding-top: 40px;
-    font-size: 40px;
+    font-size: 55px;
+    font-weight: 800;
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #ffffff 0%, #2aaaf8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .all-details {
     display: flex;
     gap: 80px;
-    width: 70%;
-    height: 80vh;
+    width: 85%;
+    max-width: 1200px;
     margin: auto;
     padding-top: 60px;
+    align-items: center;
+}
+
+.img {
+    position: relative;
+}
+
+.img::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #2aaaf8;
+    border-radius: 25px;
+    opacity: 0.3;
+    z-index: 0;
+    animation: pulse-border 3s ease-in-out infinite;
+}
+
+@keyframes pulse-border {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.6;
+        transform: scale(1.05);
+    }
 }
 
 .img img {
     margin-top: 20px;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     border-radius: 20px;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 20px 60px rgba(42, 170, 248, 0.3);
+    transition: transform 0.5s;
+}
+
+.img img:hover {
+    transform: scale(1.05);
 }
 
 .skill-info {
     padding-top: 20px;
+    flex: 1;
 }
 
 .skill-info>p {
-    font-size: 18px;
-    line-height: 35px;
-    padding-bottom: 20px;
+    font-size: 19px;
+    line-height: 38px;
+    padding-bottom: 30px;
+    color: rgba(255, 255, 255, 0.85);
 }
 
 .name-details {
     display: flex;
-    gap: 30px;
-    line-height: 35px;
+    gap: 40px;
+    line-height: 40px;
     font-size: 17px;
     padding-bottom: 40px;
+    background: rgba(42, 170, 248, 0.05);
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid rgba(42, 170, 248, 0.1);
+    margin-top: 20px;
 }
 
 .name-form {
     color: white;
+    font-weight: 600;
 }
 
 .name-form2 {
+    color: rgba(255, 255, 255, 0.8);
+}
 
-    color: rgb(182, 182, 182);
+.download-btn {
+    margin-top: 20px;
 }
 
 .resume-pdf {
     cursor: pointer;
-    padding: 15px 30px;
-    background: #2aaaf8;
+    padding: 16px 35px;
+    background: linear-gradient(135deg, #2aaaf8, #1a7fc4);
     border: none;
-    border-radius: 10px;
-    transition: 0.5s;
+    border-radius: 30px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: none;
     color: white;
-    transition: 0.5s;
+    display: inline-block;
+    box-shadow: 0 10px 30px rgba(42, 170, 248, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.resume-pdf::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.resume-pdf:hover::before {
+    width: 300px;
+    height: 300px;
 }
 
 .resume-pdf:hover {
-    border-radius: 30px;
-    transform: scale(1.07);
-    box-shadow: -1px -1px 20px 4px #2aaaf8;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(42, 170, 248, 0.5);
+}
+
+.resume-pdf span {
+    position: relative;
+    z-index: 1;
 }
 
 .skill-line {

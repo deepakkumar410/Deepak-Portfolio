@@ -2,13 +2,43 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-    font-family: "Outfit", serif;
+  font-family: "Outfit", serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html,
 body {
   color: white;
-  background: #191d20;
+  background: linear-gradient(135deg, #0a0e27 0%, #191d20 50%, #0f1419 100%);
+  background-attachment: fixed;
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0e27;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #2aaaf8, #1a7fc4);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #3bb9ff, #2a8fd4);
+}
+
+/* Selection */
+::selection {
+  background: #2aaaf8;
+  color: white;
 }

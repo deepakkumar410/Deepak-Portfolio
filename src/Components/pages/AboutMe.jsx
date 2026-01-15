@@ -52,7 +52,7 @@ const AboutMe = () => {
         <h1 className="about-text">About Me</h1>
         <div className="all-details">
           <div className="img">
-            <img src="photo.jpg" alt="" />
+            <img src="/photo.jpg" alt="Deepak Kumar" />
           </div>
           <div className="skill-info">
             <p>

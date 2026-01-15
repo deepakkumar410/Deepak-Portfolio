@@ -46,10 +46,11 @@ const Navbar = () => {
           <ul className= {showIcon ? "iconOfMenu  ":"show-web"} >
             <li><a href="#" onClick={() => scrollToSection("home")}>Home</a></li>
             <li><a href="#about" onClick={() => scrollToSection("about")}>About Me</a></li>
-            <li><a href="#skillss" onClick={() => scrollToSection("skills")}>Skills</a></li>
+            <li><a href="#skills" onClick={() => scrollToSection("skills")}>Skills</a></li>
+            <li><a href="#experience" onClick={() => scrollToSection("experience")}>Experience</a></li>
             <li><a href="#projects" onClick={() => scrollToSection("projects")}>Projects</a></li>
             <li><a href="#contact" onClick={() => scrollToSection("contact")}>Contact Me</a></li>
-            <li><a href="Deepak_Kumar_CV.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+            <li><a href="/Deepak_Kumar_CV.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
           </ul>
           <div className="connect">
           <a href="https://www.linkedin.com/in/deepak-kumar-799a22328/" target="_blank" className="connect-btn"> Connect With Me</a>

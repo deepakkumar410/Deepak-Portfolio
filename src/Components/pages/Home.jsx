@@ -18,32 +18,47 @@ const Home = () => {
 
 
  useGSAP(()=>{
+  // Ensure image is visible by default
+  gsap.set(".dpk-img", {
+    opacity: 1,
+    x: 0,
+    scale: 1,
+    visibility: "visible"
+  });
 
+  const tl = gsap.timeline();
   
-  gsap.from(".my-info",{
-    x: -100,
-    opacity:0,
-    stagger:0.5,
-    duration: 1.5,
-    delay:0.5 ,
-  }),
-  gsap.from(".icon",{
+  tl.from(".my-info h1", {
+    y: 50,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power3.out"
+  })
+  .from(".info-para", {
+    y: 30,
+    opacity: 0,
+    duration: 1,
+    ease: "power3.out"
+  }, "-=0.5")
+  .from(".icon", {
     scale: 0,
-    opacity:0,
-    duration: 1.5,
-    delay:0.5 ,
-  })
-  gsap.from(".dpk-img",{
-    x:100,
-    opacity:0,
-    duration: 1.5,
-    delay:0.5 ,
-  })
-
+    opacity: 0,
+    duration: 0.8,
+    stagger: 0.1,
+    ease: "back.out(1.7)"
+  }, "-=0.3")
+  .from(".dpk-img", {
+    x: 50,
+    opacity: 0.5,
+    scale: 0.9,
+    duration: 1,
+    ease: "power3.out"
+  }, "-=0.8")
   })
   return (
     <>
-      <section id="home " className="home-container">
+      <section id="home" className="home-container">
         <div className="left-side">
           <div className="my-info">
             <h1> Hi !</h1>
@@ -73,7 +88,17 @@ const Home = () => {
         </div>
         <div className="right-side">
           <div className="dpk-img">
-            <img src="photo.jpg" alt="" /> 
+            <img 
+              src="/photo.jpg" 
+              alt="Deepak Kumar" 
+              onError={(e) => {
+                console.error("Image failed to load:", e.target.src);
+                e.target.style.display = "none";
+              }}
+              onLoad={() => {
+                console.log("Image loaded successfully");
+              }}
+            /> 
           </div>
         </div>
       </section>

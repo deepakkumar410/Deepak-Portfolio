@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import Swal from 'sweetalert2';
 import "../Css/Contact.css"
 import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
-import gsap from 'gsap';
 
 const Contact = () => {
     const [name, setName] = useState({
