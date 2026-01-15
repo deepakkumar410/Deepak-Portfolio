@@ -53,7 +53,7 @@
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 24px 70px rgba(15, 23, 42, 0.9);
+    box-shadow: 0 24px 70px rgb(2, 24, 77);
     border-color: rgba(56, 189, 248, 0.7);
 }
 
