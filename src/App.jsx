@@ -7,7 +7,6 @@ import Projects from './Components/pages/Projects'
 import Contact from './Components/pages/Contact'
 import Footer from './Components/pages/Footer'
 import ParticlesBackground from './Components/ParticlesBackground'
-import './App.css'
 const App = () => {
   return (
    <>

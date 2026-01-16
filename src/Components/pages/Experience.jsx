@@ -1,8 +1,7 @@
-import "../Css/Experience.css";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { FaBriefcase, FaCalendarAlt, FaMapMarkerAlt, FaCode } from "react-icons/fa";
+import { FaBriefcase, FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
 gsap.registerPlugin(ScrollTrigger);
 
 const Experience = () => {
@@ -13,37 +12,14 @@ const Experience = () => {
       position: "Frontend Developer",
       location: "Faridabad, India",
       duration: "April 2025 - Present",
-      description: "Developed a fully responsive web application with custom UI components, implementing front-end logic to handle dynamic workflows and optimizing performance for a seamless user experience.",
-      projects: [
-        {
-          name: "Ticket Management System",
-          technologies: ["React", "Tailwind CSS", "RTK Query"],
-          points: [
-            "Developed a fully responsive system using React, Tailwind CSS, and RTK Query",
-            "Implemented workflows for task handling, ticket updates, scheduling, and real-time UI refresh",
-            "Created reusable components (tables, forms, modals) improving frontend speed & maintainability",
-            "Optimized performance by reducing re-renders and restructuring components for faster load time",
-            "Integrated secure API communication and automatic caching"
-          ]
-        },
-        {
-          name: "B2B Production Automation",
-          technologies: ["React", "RTK Query", "Node.js"],
-          points: [
-            "Built frontend features for inventory tracking, production scheduling, and order management",
-            "Implemented complex business logic for role-based dashboards (Admin, Manager, Staff)",
-            "Integrated backend APIs using RTK Query for real-time data consistency and smooth workflows",
-            "Designed responsive dashboard layouts improving efficiency for business users"
-          ]
-        }
-      ]
+      description: "Developed fully responsive web applications with custom UI components, implementing front-end logic for dynamic workflows and optimizing performance."
     }
   ];
 
   
   useGSAP(() => {
     // Ensure content is visible by default
-    gsap.set([".experience-card", ".project-card"], {
+    gsap.set([".experience-card"], {
       opacity: 1,
       y: 0,
       visibility: "visible"
@@ -75,68 +51,49 @@ const Experience = () => {
       duration: 0.5,
       ease: "power2.out",
     }, "-=0.2")
-    .from(".project-card", {
-      y: 25,
-      opacity: 0.8,
-      stagger: 0.08,
-      duration: 0.5,
-      ease: "power2.out",
-    }, "-=0.15")
   }, []);
 
   return (
     <>
-      <section id="experience" className="experience-container">
-        <div className="experience-header">
-          <h1>My <span className="highlight">Experience</span></h1>
-          <p className="experience-subtitle">Professional journey and personal projects</p>
+      <section id="experience" className="w-[90%] max-w-[1200px] mx-auto pt-[100px] pb-[100px] relative z-[1] min-h-[500px] overflow-visible max-[1000px]:w-full max-[1000px]:p-20 max-[768px]:pt-16 max-[768px]:pb-12 max-[768px]:px-4 max-[768px]:w-full experience-container">
+        <div className="text-center mb-20 max-[768px]:mb-8 max-[768px]:mt-4 experience-header">
+          <h1 className="text-[55px] font-extrabold mb-[15px] text-white max-[1000px]:text-[40px] max-[768px]:text-3xl max-[768px]:mb-2">My <span className="text-gray-300 highlight">Experience</span></h1>
+          <p className="text-lg text-white/70 font-light max-[768px]:text-base experience-subtitle">Professional journey and personal projects</p>
         </div>
 
-        <div className="experiences-wrapper">
-          {experiences.map((exp) => (
-            <div key={exp.id} className="experience-card">
-              <div className="experience-header-card">
-                <div className="company-info">
-                  <div className="company-icon">
-                    <FaBriefcase />
-                  </div>
-                  <div>
-                    <h2 className="company-name">{exp.company}</h2>
-                    <h3 className="position-name">{exp.position}</h3>
-                  </div>
-                </div>
-                <div className="experience-meta">
-                  <div className="meta-item">
-                    <FaMapMarkerAlt className="meta-icon" />
-                    <span>{exp.location}</span>
-                  </div>
-                  <div className="meta-item">
-                    <FaCalendarAlt className="meta-icon" />
-                    <span>{exp.duration}</span>
-                  </div>
-                </div>
-              </div>
-              <p className="experience-description">{exp.description}</p>
+        <div className="relative max-w-[900px] mx-auto experiences-wrapper">
+          {/* Timeline line */}
+          <div className="absolute left-[30px] top-0 bottom-0 w-[2px] bg-gray-700 max-[768px]:left-[15px] timeline-line"></div>
+          
+          {experiences.map((exp, index) => (
+            <div key={exp.id} className="relative mb-12 max-[768px]:mb-8 experience-card">
+              {/* Timeline dot */}
+              <div className="absolute left-[22px] top-2 w-4 h-4 rounded-full bg-gray-500 border-4 border-gray-900 z-10 max-[768px]:left-[9px] max-[768px]:w-3 max-[768px]:h-3 timeline-dot"></div>
               
-              <div className="projects-list">
-                {exp.projects.map((project, idx) => (
-                  <div key={idx} className="project-item">
-                    <div className="project-header">
-                      <FaCode className="project-icon" />
-                      <h4 className="project-name">{project.name}</h4>
+              {/* Content card */}
+              <div className="ml-16 bg-[radial-gradient(circle_at_top_left,rgba(56,189,248,0.08),rgba(15,23,42,0.96))] backdrop-blur-[12px] border border-[rgba(148,163,184,0.35)] rounded-[20px] p-6 transition-all duration-[0.4s] hover:-translate-y-1 hover:shadow-[0_24px_70px_rgba(15,23,42,0.9)] hover:border-[rgba(56,189,248,0.7)] max-[768px]:ml-8 max-[768px]:p-4">
+                <div className="flex items-start justify-between flex-wrap gap-3 mb-4 max-[768px]:flex-col max-[768px]:gap-2">
+                  <div className="flex items-center gap-4 max-[768px]:gap-3">
+                    <div className="w-12 h-12 bg-gradient-to-br from-[rgba(75,85,99,0.2)] to-[rgba(75,85,99,0.1)] border-2 border-[rgba(75,85,99,0.3)] rounded-xl flex items-center justify-center text-xl text-gray-400 max-[768px]:w-10 max-[768px]:h-10 max-[768px]:text-lg">
+                      <FaBriefcase />
                     </div>
-                    <div className="project-tech-tags">
-                      {project.technologies.map((tech, techIdx) => (
-                        <span key={techIdx} className="tech-badge">{tech}</span>
-                      ))}
+                    <div>
+                      <h2 className="text-2xl font-bold text-white m-0 max-[768px]:text-xl">{exp.company}</h2>
+                      <h3 className="text-lg font-semibold text-gray-400 m-0 max-[768px]:text-base">{exp.position}</h3>
                     </div>
-                    <ul className="project-points">
-                      {project.points.map((point, pointIdx) => (
-                        <li key={pointIdx}>{point}</li>
-                      ))}
-                    </ul>
                   </div>
-                ))}
+                  <div className="flex flex-col gap-2 text-sm text-white/70 max-[768px]:text-xs">
+                    <div className="flex items-center gap-2">
+                      <FaMapMarkerAlt className="text-gray-400" />
+                      <span>{exp.location}</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <FaCalendarAlt className="text-gray-400" />
+                      <span>{exp.duration}</span>
+                    </div>
+                  </div>
+                </div>
+                <p className="text-base leading-relaxed text-white/85">{exp.description}</p>
               </div>
             </div>
           ))}
