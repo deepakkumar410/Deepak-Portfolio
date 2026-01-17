@@ -76,12 +76,12 @@ const Navbar = () => {
             <a href="https://www.linkedin.com/in/deepak-kumar-799a22328/" target="_blank" className="no-underline text-white bg-gray-700 border border-gray-600 text-base py-[15px] px-5 rounded-[10px] cursor-pointer transition-[0.5s] hover:bg-gray-600 hover:border-gray-500 hover:scale-105 hover:rounded-[50px] hover:transition-all hover:duration-[1s] hover:shadow-[0_5px_15px_rgba(0,0,0,0.3)]"> Connect With Me</a>
           </div>
         </div>
-        <div 
-          className="hidden max-[1000px]:block max-[1000px]:relative max-[1000px]:right-4 max-[1000px]:flex max-[1000px]:items-center max-[1000px]:justify-center menu-icon cursor-pointer z-[1001] transition-all duration-300 hover:scale-110"
+        <div
+          className="hidden max-[1000px]:flex items-center justify-center menu-icon cursor-pointer z-[1001]"
           onClick={handleClick}
         >
-          <div className={`w-10 h-10 flex items-center justify-center rounded-lg bg-[rgba(56,189,248,0.1)] border border-cyan-400/30 backdrop-blur-sm transition-all duration-300 ${showIcon ? 'bg-[rgba(56,189,248,0.2)] border-cyan-400/50' : ''} hover:bg-[rgba(56,189,248,0.2)] hover:border-cyan-400/50`}>
-            <RiMenu3Fill className={`text-cyan-400 text-2xl transition-transform duration-300 ${showIcon ? 'rotate-90' : ''}`} />
+          <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-[rgba(56,189,248,0.1)] border border-cyan-400/30">
+            <RiMenu3Fill className="text-cyan-400 text-2xl" />
           </div>
         </div>
       </nav>

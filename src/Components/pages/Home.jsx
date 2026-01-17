@@ -19,47 +19,54 @@ const Home = () => {
 
 
 
-  useGSAP(() => {
-    // Ensure image is visible by default
-    gsap.set(".dpk-img", {
-      opacity: 1,
-      x: 0,
-      scale: 1,
-      visibility: "visible"
-    });
+ useGSAP(() => {
+  gsap.set(".dpk-img", {
+    opacity: 1,
+    scale: 1,
+    visibility: "visible",
+  });
 
-    const tl = gsap.timeline();
+  const tl = gsap.timeline({
+    delay: 0.5, // ⏳ small wait before animation starts
+  });
 
-    tl.from(".my-info h1", {
-      y: 40,
-      duration: 1.2,
-      ease: "power4.out"
-    })
+  // common label
+  tl.add("start");
 
-      .from(".info-para", {
-        y: 30,
-        opacity: 0,
-        duration: 1,
-        ease: "power3.out"
-      }, "-=0.5")
-      .from(".icon", {
-        scale: 0,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.1,
-        ease: "back.out(1.7)"
-      }, "-=0.3")
-      .from(".dpk-img", {
-        x: 50,
-        opacity: 0.5,
-        scale: 0.9,
-        duration: 1,
-        ease: "power3.out"
-      }, "-=0.8")
-  })
+  tl.from(".my-info h1", {
+    y: 60,
+    opacity: 0,
+    duration: 1.6,
+    ease: "power4.out",
+  }, "start")
+
+  .from(".info-para", {
+    y: 50,
+    opacity: 0,
+    duration: 1.5,
+    ease: "power3.out",
+  }, "start+=0.2")
+
+  .from(".icon", {
+    scale: 0,
+    opacity: 0,
+    duration: 1.2,
+    stagger: 0.15, // smooth stagger
+    ease: "back.out(1.4)",
+  }, "start+=0.35")
+
+  .from(".dpk-img", {
+    opacity: 0,
+    scale: 0.8,
+    duration: 1.8,
+    ease: "power4.out",
+  }, "start+=0.25");
+
+}, { once: true });
+
   return (
     <>
-      <section id="home" className="w-full mt-[30px] flex gap-2.5 items-center relative z-[1] overflow-hidden before:content-[''] before:absolute before:-top-1/2 before:-right-1/5 before:w-[600px] before:h-[600px] before:bg-[radial-gradient(circle,rgba(75,85,99,0.05)_0%,transparent_70%)] before:rounded-full before:animate-float before:z-0 after:content-[''] after:absolute after:-bottom-[30%] after:-left-[10%] after:w-[500px] after:h-[500px] after:bg-[radial-gradient(circle,rgba(75,85,99,0.08)_0%,transparent_70%)] after:rounded-full after:animate-float-reverse after:z-0 max-[1000px]:mt-0 max-[1000px]:w-full max-[1000px]:min-h-screen max-[1000px]:flex-col-reverse max-[1000px]:items-center max-[1000px]:p-5 max-[768px]:p-2.5 max-[1000px]:before:hidden max-[1000px]:after:hidden">
+      <section id="home" className="w-full mt-[30px] flex gap-2.5 items-center relative z-[1] overflow-hidden before:content-[''] before:absolute before:-top-1/2 before:-right-1/5 before:w-[600px] before:h-[600px] before:bg-[radial-gradient(circle,rgba(75,85,99,0.05)_0%,transparent_70%)] before:rounded-full before:animate-float before:z-0 after:content-[''] after:absolute after:-bottom-[30%] after:-left-[10%] after:w-[500px] after:h-[500px] after:bg-[radial-gradient(circle,rgba(75,85,99,0.08)_0%,transparent_70%)] after:rounded-full after:animate-float-reverse after:z-0 max-[1000px]:mt-0 max-[1000px]:w-full max-[1000px]:h-[740px] max-[1000px]:flex-col-reverse max-[1000px]:items-center max-[1000px]:p-5 max-[768px]:p-2.5 max-[1000px]:before:hidden max-[1000px]:after:hidden">
         <div className="w-[60%] relative z-[1] max-[1000px]:w-full max-[1000px]:flex max-[1000px]:flex-col max-[1000px]:z-[1]">
           <div className="mt-[60px] ml-10 p-2.5 px-10 max-[1000px]:p-0 max-[1000px]:px-5 max-[1000px]:my-5 max-[1000px]:text-center">
             <h1 className="text-[55px] font-bold leading-tight mb-5 text-white max-[1000px]:text-[32px] max-[768px]:text-[28px]">Hi!</h1>
