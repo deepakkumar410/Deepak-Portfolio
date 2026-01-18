@@ -111,7 +111,7 @@ const Home = () => {
           </div>
         </div>
         <div className="w-1/2 flex justify-center items-center relative z-[1] max-[1000px]:w-full max-[1000px]:flex max-[1000px]:justify-center right-side">
-          <div className="mt-[50px] w-[450px] h-[450px] rounded-full  shadow-[0_0_30px_rgba(0,0,0,0.5),inset_0_0_30px_rgba(255,255,255,0.05)] flex items-center justify-center relative animate-floatImage transition-all duration-500 opacity-100 visible max-[1000px]:my-5 max-[1000px]:w-[250px] max-[1000px]:h-[250px] max-[768px]:w-[200px] max-[768px]:h-[200px] hover:scale-105 hover:shadow-[0_0_40px_rgba(0,0,0,0.6)] dpk-img">
+          <div className="mt-[50px] w-[510px] h-[510px] rounded-full  shadow-[0_0_30px_rgba(0,0,0,0.5),inset_0_0_30px_rgba(255,255,255,0.05)] flex items-center justify-center relative animate-floatImage transition-all duration-500 opacity-100 visible max-[1000px]:my-5 max-[1000px]:w-[250px] max-[1000px]:h-[250px] max-[768px]:w-[200px] max-[768px]:h-[200px] hover:scale-105 hover:shadow-[0_0_40px_rgba(0,0,0,0.6)] dpk-img">
             <img
               src="/journalist-digital-avatar-generative-ai_934475-9380-removebg-preview.png"
               alt="Deepak Kumar"
