@@ -10,7 +10,7 @@ gsap.registerPlugin(useGSAP);
 const Home = () => {
 
   const [text] = useTypewriter({
-    words: ['Deepak Kumar', 'Web Developer'],
+    words: ['Deepak Kumar', 'Full Stack Developer'],
     loop: true,
     typeSpeed: 80,      // typing smooth
     deleteSpeed: 50,    // deleting smooth
@@ -80,7 +80,7 @@ const Home = () => {
             </h1>
 
             <p className="text-xl leading-[38px] py-[30px] text-white/85 max-w-[90%] max-[1000px]:text-base max-[1000px]:py-5 max-[1000px]:px-2.5 max-[1000px]:text-center max-[1000px]:max-w-full max-[768px]:text-sm info-para">
-              I am a MERN stack developer with a strong understanding of web development using MongoDB, Express.js, React.js and Node.js. I focus on building user-friendly, performant web applications and APIs.
+              I am a Full Stack developer with a strong understanding of web development using MongoDB, Express.js, React.js and Node.js. I focus on building user-friendly, performant web applications and APIs.
             </p>
           </div>
           <div className="pl-20 flex gap-[30px] max-[1000px]:pl-0 max-[1000px]:justify-center max-[1000px]:flex-wrap max-[1000px]:gap-5 link-icon">

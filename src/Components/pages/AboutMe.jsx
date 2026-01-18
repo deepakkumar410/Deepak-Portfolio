@@ -54,7 +54,7 @@ const AboutMe = () => {
                 My name is <span className="text-cyan-400 font-semibold">Deepak Kumar</span>, and I am from Bihar. Currently, I reside in Faridabad. I'm in the final year of my <span className="text-purple-400 font-semibold">Bachelor of Computer Applications (BCA)</span> program at Amity University Online.
               </p>
               <p className="text-[19px] leading-[38px] text-white/85 mb-6 max-[768px]:text-[17px] max-[768px]:leading-[32px]">
-                I am a <span className="text-cyan-400 font-semibold">MERN Stack Developer</span> with 6+ months of professional experience in building scalable web applications. My expertise lies in creating user-friendly, performant interfaces using React.js, Node.js, Express.js, and MongoDB. I have a strong passion for modern web technologies and continuously strive to learn and implement best practices in software development.
+                I am a <span className="text-cyan-400 font-semibold">Full Stack Developer</span> with around 1 year of professional experience in building scalable web applications. My expertise lies in creating user-friendly, performant interfaces using React.js, Node.js, Express.js, and MongoDB. I have a strong passion for modern web technologies and continuously strive to learn and implement best practices in software development.
               </p>
               <p className="text-[19px] leading-[38px] text-white/85 max-[768px]:text-[17px] max-[768px]:leading-[32px]">
                 I specialize in developing reusable UI components, optimizing application performance, and implementing real-time features using modern tools like RTK Query. My goal is to contribute to innovative full-stack teams and deliver exceptional user experiences through clean, efficient code.
@@ -97,7 +97,7 @@ const AboutMe = () => {
                   </div>
                   <div className="flex flex-col">
                     <span className="text-gray-400 text-sm mb-1">Experience</span>
-                    <span className="text-white font-medium">6+ Months | MERN Stack Developer</span>
+                    <span className="text-white font-medium">1 Year | Full Stack Developer</span>
                   </div>
                   <div className="flex flex-col">
                     <span className="text-gray-400 text-sm mb-1">Availability</span>
