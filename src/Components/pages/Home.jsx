@@ -68,7 +68,7 @@ const Home = () => {
     <>
       <section id="home" className="w-full mt-[30px] flex gap-2.5 items-center relative z-[1] overflow-hidden before:content-[''] before:absolute before:-top-1/2 before:-right-1/5 before:w-[600px] before:h-[600px] before:bg-[radial-gradient(circle,rgba(75,85,99,0.05)_0%,transparent_70%)] before:rounded-full before:animate-float before:z-0 after:content-[''] after:absolute after:-bottom-[30%] after:-left-[10%] after:w-[500px] after:h-[500px] after:bg-[radial-gradient(circle,rgba(75,85,99,0.08)_0%,transparent_70%)] after:rounded-full after:animate-float-reverse after:z-0 max-[1000px]:mt-0 max-[1000px]:w-full max-[1000px]:h-[740px] max-[1000px]:flex-col-reverse max-[1000px]:items-center max-[1000px]:p-5 max-[768px]:p-2.5 max-[1000px]:before:hidden max-[1000px]:after:hidden">
         <div className="w-[60%] relative z-[1] max-[1000px]:w-full max-[1000px]:flex max-[1000px]:flex-col max-[1000px]:z-[1]">
-          <div className="mt-[60px] ml-10 p-2.5 px-10 max-[1000px]:p-0 max-[1000px]:px-5 max-[1000px]:my-5 max-[1000px]:text-center">
+          <div className="mt-[60px] xl:ml-10 p-2.5 px-10 max-[1000px]:p-0 max-[1000px]:px-5 max-[1000px]:my-5 max-[1000px]:text-center">
             <h1 className="text-[55px] font-bold leading-tight mb-5 text-white max-[1000px]:text-[32px] max-[768px]:text-[28px]">Hi!</h1>
             <h1 className="text-[55px] font-bold leading-tight mb-5 text-white max-[1000px]:text-[32px] max-[768px]:text-[28px]">
               I am <span className="font-bold bg-gradient-to-r from-cyan-400 via-purple-400 via-pink-400 to-cyan-400 bg-[length:600%_600%] bg-clip-text text-transparent animate-gradientText no-gsap">{text}</span>
