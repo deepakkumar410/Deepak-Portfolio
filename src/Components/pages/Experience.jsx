@@ -9,10 +9,10 @@ const Experience = () => {
     {
       id: 1,
       company: "DEEPNAP SOFTECH",
-      position: "Frontend Developer",
+      position: "Full Stack Developer",
       location: "Faridabad, India",
       duration: "April 2025 - Present",
-      description: "Developed fully responsive web applications with custom UI components, implementing front-end logic for dynamic workflows and optimizing performance."
+      description: "Developed a fully responsive web application with custom UI components, implementing frontend logic with React and RTK Query , TanStack Query, and backend APIs using Node.js and Express.js for dynamic workflows and seamless performance. "
     }
   ];
 
