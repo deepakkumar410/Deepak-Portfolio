@@ -51,7 +51,7 @@ const AboutMe = () => {
           <div className="about-content">
             <div className="bg-[radial-gradient(circle_at_top_left,rgba(56,189,248,0.08),rgba(15,23,42,0.96))] backdrop-blur-[12px] rounded-[20px] p-8 mb-6 max-[768px]:p-4 max-[768px]:mb-4">
               <p className="text-[19px] leading-[38px] text-white/85 mb-6 max-[768px]:text-sm max-[768px]:leading-6 max-[768px]:mb-4">
-                My name is <span className="text-cyan-400 font-semibold">Deepak Kumar</span>, and I am from Bihar. Currently, I reside in Faridabad. I'm in the final year of my <span className="text-purple-400 font-semibold">Bachelor of Computer Applications (BCA)</span> program at Amity University Online.
+                My name is <span className="text-cyan-400 font-semibold">Deepak Kumar</span>, and I am from Bihar. Currently, I reside in Faridabad. I have successfully completed my <span className="text-purple-400 font-semibold">Bachelor of Computer Applications (BCA)</span> degree from Amity University Online in <span className="text-green-400 font-semibold">February 2025</span>.
               </p>
               <p className="text-[19px] leading-[38px] text-white/85 mb-6 max-[768px]:text-[17px] max-[768px]:leading-[32px]">
                 I am a <span className="text-cyan-400 font-semibold">Full Stack Developer</span> with around 1 year of professional experience in building scalable web applications. My expertise lies in creating user-friendly, performant interfaces using React.js, Node.js, Express.js, and MongoDB. I have a strong passion for modern web technologies and continuously strive to learn and implement best practices in software development.
@@ -79,7 +79,7 @@ const AboutMe = () => {
                   </div>
                   <div className="flex flex-col">
                     <span className="text-gray-400 text-sm mb-1">Education</span>
-                    <span className="text-white font-medium">BCA (Final Year) - Amity University Online</span>
+                    <span className="text-white font-medium">BCA ✓ (Completed - Feb 2025)</span>
                   </div>
                 </div>
               </div>
