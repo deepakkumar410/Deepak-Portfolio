@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import {FaExternalLinkAlt,  FaTimes, FaBolt,  } from "react-icons/fa";
+import {FaExternalLinkAlt,  FaTimes, FaBolt, FaCloud } from "react-icons/fa";
 import { SiReact, SiNodedotjs, SiExpress, SiJavascript, SiHtml5, SiCss3, SiStripe, SiGooglecloud, SiVercel, SiMongodb } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { FaWandMagicSparkles } from "react-icons/fa6";
@@ -25,7 +25,7 @@ const getTechIcon = (tech) => {
     "Context API": <SiReact {...iconProps} className="text-cyan-400" />,
     "Framer Motion": <FaWandMagicSparkles {...iconProps} className="text-pink-400" />,
     "Admin Panel": <TbApi {...iconProps} className="text-indigo-400" />,
-    "Multer": <TbApi {...iconProps} className="text-amber-400" />,
+    "Cloudinary": <FaCloud {...iconProps} className="text-blue-500" />,
     "Vercel": <SiVercel {...iconProps} className="text-white" />,
   };
   return techMap[tech] || <span>{tech}</span>;
@@ -55,13 +55,13 @@ const Projects = () => {
         "Customer Profile & Order History",
         "Secure Stripe Payment Processing",
         "Customer Support Analytics",
-        "File Upload with Multer Middleware",
+        "File Upload with Cloudinary",
         "Smooth Framer Motion Animations",
         "Fully Responsive Design"
       ],
       video: "/E-Commerce Websites - Made with Clipchamp.mp4",
       link: "https://d-cart-e-commerce.netlify.app/",
-      technologies: ["React", "Context API", "Framer Motion", "MongoDB", "Node.js", "Express.js", "Multer", "Stripe", "Google OAuth", "Admin Panel"],
+      technologies: ["React", "Context API", "Framer Motion", "MongoDB", "Node.js", "Express.js", "Cloudinary", "Stripe", "Google OAuth", "Admin Panel"],
       category: "Full Stack"
     },
     {
